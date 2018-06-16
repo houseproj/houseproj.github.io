@@ -668,7 +668,7 @@ button:hover {
     color: #2A2A2A;
 }
 
-.item, .desc{
+.item{
     float:left;
 }
 
