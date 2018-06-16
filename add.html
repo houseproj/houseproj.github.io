@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Добавить объявление</title>
+	<script language="javascript">
+var items=0;
+function AddItem() {
+  div=document.getElementById("items");
+  button=document.getElementById("add");
+  items++;
+  newitem="<strong>Плоащдь комнаты №" + items + ": </strong>";
+  newitem+="<input type=\"text\" name=\"item" + items;
+  newitem+="\" size=\"45\"><br><br>";
+  
+  newitem+= "<select name=\"select2\">";
+  newitem+= "<option selected=\"selected\">Выберите тип объекта</option>"
+  newitem+= "<option>прихожая</option>"
+  newitem+= "<option>спальня</option>"
+  newitem+= "<option>столовая</option>"
+  newitem+= "<option>кухня</option>"
+  newitem+= "<option>библиотека</option>"
+  newitem+= "<option>кабинет</option>"
+  newitem+= "<option>ванная</option>"
+  newitem+= "<option>передняя</option>"
+  newitem+= "<option>детская</option>"
+  newitem+= "<option>жилая</option>"
+  newitem+= "<option>чулан</option>"
+  newitem+= "<option>зал</option>"
+  newitem+= "<option>холл</option>"
+  newitem+= "<option>мастерская</option>"
+  newitem+= "<option>будуар</option>"
+  newitem+= "<option>гардеробная</option>"
+  newitem+= "<option>гостинная</option>"
+  newitem+= "<option>туалет</option>"
+  newitem+= "<option>коридор</option>"
+  newitem+= "</select><br><br>"
+  
+  newnode=document.createElement("span");
+  newnode.innerHTML=newitem;
+  div.insertBefore(newnode,button);
+}
+</script>
+<!--
+ <div>
+     <input placeholder="Площадь" required="" id="text" type="text">
+ </div><br>
+ 
+ 
+ <div ID="items">
+<strong>Поле 1: </strong><input type="text" name="item1" size="45"><br>
+	 <div>
+
+	 
+	  <select name="select2">
+          <option selected="selected">Выберите тип объекта</option>
+          <option>Комната</option>
+          <option>Дом</option>
+          <option>Квартира</option>
+          <option>Участок</option>
+          <option>Коммерческая недвижимость</option>
+      </select>
+	 
+--> 
+</head>
+<body>
+	<div id="wrap">
+		<!--Шапка-->
+		<div id="header">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html">  <img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="contacts">
+					<p><span class="green">Телефон:</span> 8 800 2000 01 01<br><span class="gray">звонок бесплатный</span></p>
+					<p><span class="green">E-mail:</span> example@gmail.com</p>
+					<p>
+						<a href=""><img src="img/vk.png" alt=""></a>
+						<a href=""><img src="img/fb.png" alt=""></a>
+						<a href=""><img src="img/tw.png" alt=""></a>
+						<a href=""><img src="img/gp.png" alt=""></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--Навигация-->
+		<div id="navigation">
+			<ul>
+				<li><a href="auth.html">Вход</a></li>
+				<li><a href="reg.html">Регистрация</a></li>
+				<li><a href="add.html">Добавить объявление</a></li>
+				<li><a href="search.html">Поиск</a></li>
+				<li><a href="">О компании</a>
+					<ul>
+						<li><a href="">Для рекламодателей</a></li>
+						<li><a href="">Для покупателей</a></li>
+						<li><a href="">Вакансии</a></li>
+					</ul>
+				</li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+		</div>
+		<!--Контент-->
+		<div id="content">
+			<!--Левая колонка-->
+			
+			<!--Контент-->
+			<div id="main">
+				<center>
+	
+				
+				<!--Популярные товары-->
+				<div id="product-list">
+				
+	<form action="">
+   <h1>Добавление объявления</h1>
+   <p>Тип объявления: </p>
+ <input type="checkbox" id="payt4"/><label for="payt4"></label>  <br>
+   <br>
+  
+     <p>Тип Объекта: </p>
+		 <select name="select2">
+          <option selected="selected">Выберите тип объекта</option>
+          <option>Комната</option>
+          <option>Дом</option>
+          <option>Квартира</option>
+          <option>Участок</option>
+          <option>Коммерческая недвижимость</option>
+      </select>
+ <br> <br> 
+    <div>
+     <input placeholder="Адрес" required="" id="text" type="text">
+    </div>
+    <br>
+    <div>
+     <input placeholder="Площадь" required="" id="text" type="text">
+    </div><br>
+     <div>
+     <input placeholder="Количество комнат" required="" id="text" type="text">
+    </div><br>
+	  <div>
+     <input placeholder="Этаж" required="" id="text" type="text">
+    </div><br>
+     <div>
+     <input placeholder="Стоимость" required="" id="text" type="text"><br>
+    </div>
+    <div><br>
+<div ID="items">
+<input type="button" value="Добавить комнату" onClick="AddItem();" ID="add">
+</div><br>
+
+<p class="button"><button class="green">Добавить объявление</button></p><br>
+	</form><!-- form -->
+      <a href="#">Напомнить пароль?</a>
+      <a href="/auth.html">Вход</a>
+    </div>
+   
+					
+						
+						
+					
+				</div>
+
+				</center>
+			</div>
+		</div>
+		<!--Подвал-->
+		<div id="footer">
+			<div class="content">
+				<div class="left">
+					<span>Copyright © example.com 2014</span>
+					<a href="">Каталог</a>
+					<a href="">Блог</a>
+					<a href="">Скидки и акции</a>
+					<a href="">Прайс-лист</a>
+					<a href="">О компании</a>
+					<a href="">Контакты</a>
+				</div>
+				<div class="count">
+					<img src="img/count.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
